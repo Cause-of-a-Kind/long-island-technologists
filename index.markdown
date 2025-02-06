@@ -4,3 +4,13 @@
 
 layout: home
 ---
+
+# Welcome to the Long Island Technologists meetup!
+
+Next meetup is on March 13, 2025 at 7:00 PM at Flux Coffee in Farmingdale. [RSVP here](https://www.eventbrite.com/e/long-island-technologists-meetup-free-tickets-1230485839269)
+
+<br>
+
+---
+
+<br>

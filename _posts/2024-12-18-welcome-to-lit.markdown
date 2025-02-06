@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Welcome to Long Island Technologists!"
-date: 2024-12-18 20:38:50 -0500
+date: 2025-01-01 00:00:00 -0500
 categories: updates
 ---
 
