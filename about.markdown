@@ -15,3 +15,5 @@ We believe in the power of community to elevate careers and solve complex challe
 - Stay current with emerging technologies and industry trends
 
 Join us to become part of Long Island's thriving tech ecosystem. Together, we're building more than just a network – we're creating a supportive community where technologists can thrive, inspire one another, and push the boundaries of what's possible.
+
+[Subscribe](https://causeofakind.us16.list-manage.com/subscribe?u=847ea1526d6523a41ef1eb5a5&id=48d53e9627) to the Newsletter to stay informed about upcoming events.
