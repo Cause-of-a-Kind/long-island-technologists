@@ -14,7 +14,7 @@ Next meetup is on March 13, 2025 at 7:00 PM at Flux Coffee in Farmingdale. [RSVP
 
 <br>
 
-[Subscribe To The Newsletter](https://causeofakind.us16.list-manage.com/subscribe?u=847ea1526d6523a41ef1eb5a5&id=48d53e9627)
+[Subscribe To The Newsletter](https://causeofakind.us16.list-manage.com/subscribe?u=847ea1526d6523a41ef1eb5a5&id=48d53e9627) 
 
 <br>
 
