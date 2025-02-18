@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "December Meetup Presentation: What is a Component?"
+title: "December Meetup Presentation: What is a Component? by Donnie D'Amato"
 date: 2025-02-06 00:00:00 -0500
 categories: updates
 ---
