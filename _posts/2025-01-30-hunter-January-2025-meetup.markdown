@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "January Meetup Presentation: Building Software with AI"
+title: "January Meetup Presentation: Building Software with AI by Hunter Lauder"
 date: 2025-01-30 00:00:00 -0500
 categories: updates
 ---
