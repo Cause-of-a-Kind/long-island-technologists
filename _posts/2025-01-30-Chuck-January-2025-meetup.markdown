@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "January Meetup Presentation: The Big Lie of Big O by Chuck Reeves"
-date: 2025-01-30 00:00:00 -0500
+date: 2025-02-18 00:00:00 -0500
 categories: updates
 ---
 
