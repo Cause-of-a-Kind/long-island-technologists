@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "October Meetup Presentation: How to Sync Data Between Offline Devices"
+title: "October Meetup Presentation: How to Sync Data Between Offline Devices by Michael Rispoli"
 date: 2025-02-01 00:00:00 -0500
 categories: updates
 ---
