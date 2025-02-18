@@ -9,4 +9,4 @@ categories: updates
 
 <br>
 
-In this talk, Chuck Reeves explores the misconceptions surrounding Big O notation, emphasizing its relevance in real-world applications rather than just academic theory. He discusses the impact of hardware, compilers, and memory management on performance, and contrasts sequential and parallel processing. Rispoli also highlights the challenges faced in tech interviews regarding Big O and advocates for a more practical approach to code optimization.
+In this talk, Chuck Reeves explores the misconceptions surrounding Big O notation, emphasizing its relevance in real-world applications rather than just academic theory. He discusses the impact of hardware, compilers, and memory management on performance, and contrasts sequential and parallel processing. Reeves also highlights the challenges faced in tech interviews regarding Big O and advocates for a more practical approach to code optimization.
