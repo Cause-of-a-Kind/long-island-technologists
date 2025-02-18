@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "January Meetup Presentation: Building Software with AI"
-date: 2025-01-3- 00:00:00 -0500
+date: 2025-01-30 00:00:00 -0500
 categories: updates
 ---
 
