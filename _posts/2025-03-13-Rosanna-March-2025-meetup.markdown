@@ -1,4 +1,3 @@
-
 ---
 layout: post
 title: "March Meetup Presentation: Building a Personal Brand for Technologists by Rosanna Santiago"
