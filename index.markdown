@@ -6,7 +6,7 @@ layout: home
 title: "Welcome to Long Island Technologists Meetup"
 ---
 
-Next meetup is on June 19, 2025 at 7:00 PM at Flux Coffee in Farmingdale. [RSVP here](https://www.eventbrite.com/e/long-island-technologists-meetup-free-tickets-1357173846509?aff=oddtdtcreator)
+Next meetup is on August 7th, 2025 at 7:00 PM @ Flux Coffee in Farmingdale. [RSVP here](https://www.eventbrite.com/e/long-island-technologists-meetup-free-tickets-1431652233369). The host presentation will be facilitated by The Marketing Supervillain, [Jesse James Wroblewski](https://decommoditized.com/free-resources/). 
 
 <br>
 
