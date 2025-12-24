@@ -6,7 +6,7 @@ layout: home
 title: "Welcome to Long Island Technologists Meetup"
 ---
 
-Next meetup is on Tuesday, December 9th, 2025 at 7:00 PM @ Flux Coffee in Farmingdale. [RSVP here](https://www.eventbrite.com/e/1974317747530?aff=oddtdtcreator). 
+Next meetup is on Thursday, January 29th, 2026 at 7:00 PM @ Flux Coffee in Farmingdale. [RSVP here](https://www.eventbrite.com/e/1978846949495?aff=oddtdtcreator). 
 
 <br>
 
