@@ -7,7 +7,7 @@ title: "Long Island Technologists"
 <section class="hero-section">
   <div class="hero-content">
     <div class="hero-logo">
-      <img src="/images/lit-20logo-204.png" alt="Long Island Technologists" width="400" height="150">
+      <img src="/images/lit-20logo-204.svg" alt="Long Island Technologists" width="450" height="150">
     </div>
 
     <h1 class="hero-title">
