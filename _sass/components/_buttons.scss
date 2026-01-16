@@ -1,0 +1,61 @@
+// ==========================================================================
+// Buttons
+// ==========================================================================
+
+// Use a.cta-button to override minima's link styles
+a.cta-button,
+button.cta-button,
+.cta-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  background: var(--neon-blue);
+  color: var(--text-white);
+  border: none;
+  border-radius: var(--radius-md);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+  cursor: pointer;
+
+  &:visited {
+    color: var(--text-white);
+  }
+
+  &:hover {
+    background: var(--neon-blue);
+    color: var(--text-white);
+    opacity: 0.9;
+    text-decoration: none;
+  }
+
+  &.neon-glow {
+    box-shadow: 0 0 20px var(--neon-glow);
+  }
+
+  svg {
+    margin-left: 0.5rem;
+  }
+}
+
+a.cta-button-outline,
+button.cta-button-outline,
+.cta-button-outline {
+  background: transparent;
+  color: var(--text-dark);
+  border: 1px solid var(--border-color);
+  box-shadow: none;
+
+  &:visited {
+    color: var(--text-dark);
+  }
+
+  &:hover {
+    background: oklch(0.92 0 0);
+    color: var(--text-dark);
+  }
+}

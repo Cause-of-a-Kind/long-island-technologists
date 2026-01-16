@@ -1,0 +1,116 @@
+// ==========================================================================
+// Meetup / Event Section
+// ==========================================================================
+
+// Event Card
+.event-card {
+  max-width: 900px;
+  margin: 3rem auto;
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-xl);
+  padding: 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+}
+
+// Event Card Grid Layout
+.event-card-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0;
+}
+
+.event-date {
+  background: var(--neon-blue);
+  color: var(--text-white);
+  padding: 3rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.event-date-month,
+.event-date-year {
+  font-size: 1.125rem;
+  font-weight: 500;
+  opacity: 0.9;
+}
+
+.event-date-month {
+  margin-bottom: 0.5rem;
+}
+
+.event-date-year {
+  margin-top: 0.5rem;
+}
+
+.event-date-day {
+  font-size: 5rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+// Event Details
+.event-details {
+  padding: 2.5rem;
+
+  h3 {
+    color: var(--text-dark);
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
+.event-info {
+  margin-bottom: 2rem;
+}
+
+.detail-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  background: rgba(14, 165, 233, 0.05);
+  border-radius: var(--radius-lg);
+  border-left: 3px solid var(--neon-blue);
+  margin-bottom: 1rem;
+
+  svg {
+    color: var(--neon-blue);
+    flex-shrink: 0;
+  }
+
+  span {
+    color: var(--text-dark);
+  }
+
+  strong {
+    color: var(--neon-blue);
+    min-width: 80px;
+  }
+}
+
+// Responsive
+@media (min-width: 768px) {
+  .event-card-grid {
+    grid-template-columns: 300px 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .event-card {
+    padding: 0;
+    margin: 2rem 1rem;
+  }
+
+  .event-date-day {
+    font-size: 4rem;
+  }
+
+  .event-details {
+    padding: 1.5rem;
+  }
+}

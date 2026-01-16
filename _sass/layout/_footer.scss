@@ -1,0 +1,83 @@
+// ==========================================================================
+// Footer
+// ==========================================================================
+
+// Full-bleed footer (background extends full width)
+footer {
+  width: 100%;
+  background: var(--light-bg);
+  border-top: 1px solid var(--border-color);
+}
+
+// Contained footer content
+.footer-content {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 3rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.footer-branding {
+  text-align: left;
+
+  img {
+    max-height: 60px;
+    width: auto;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    color: var(--text-gray);
+    font-size: 0.9rem;
+  }
+}
+
+.footer-copyright {
+  width: 100%;
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--border-color);
+  text-align: center;
+  color: var(--text-gray);
+  font-size: 0.9rem;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+
+  a {
+    color: var(--text-gray);
+    text-decoration: none;
+    transition: all 0.3s ease;
+    padding: 0.5rem 1rem;
+    display: inline-flex;
+    align-items: center;
+
+    &:hover {
+      color: var(--neon-blue);
+    }
+
+    svg {
+      margin-right: 0.5rem;
+    }
+  }
+}
+
+// Responsive
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .social-links {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}

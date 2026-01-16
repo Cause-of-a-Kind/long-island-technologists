@@ -1,0 +1,61 @@
+// ==========================================================================
+// Cards
+// ==========================================================================
+
+// Card Grid
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.card {
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-xl);
+  padding: 2rem;
+  transition: all 0.3s ease;
+
+  &:hover {
+    border-color: var(--neon-blue);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    transform: translateY(-5px);
+  }
+
+  h3 {
+    color: var(--text-dark);
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+  }
+
+  p {
+    color: var(--text-gray);
+    line-height: 1.8;
+    font-size: 0.95rem;
+  }
+}
+
+.card-icon {
+  width: 48px;
+  height: 48px;
+  background: rgba(14, 165, 233, 0.1);
+  border-radius: var(--radius-lg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+  color: var(--neon-blue);
+  transition: background 0.3s ease;
+}
+
+.card:hover .card-icon {
+  background: rgba(14, 165, 233, 0.2);
+}
+
+// Responsive
+@media (max-width: 768px) {
+  .card-grid {
+    grid-template-columns: 1fr;
+  }
+}
