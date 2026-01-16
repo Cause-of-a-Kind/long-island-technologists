@@ -1,0 +1,12 @@
+// ==========================================================================
+// Utility Classes
+// ==========================================================================
+
+// Neon glow utilities
+.neon-glow {
+  box-shadow: 0 0 20px var(--neon-glow);
+}
+
+.neon-text {
+  text-shadow: 0 0 10px var(--neon-glow);
+}
