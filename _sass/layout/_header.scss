@@ -114,6 +114,11 @@ body > header {
   &:hover {
     color: var(--neon-blue);
   }
+  
+  &:focus {
+    outline: 2px solid var(--neon-blue);
+    outline-offset: 2px;
+  }
 }
 
 // Icon visibility utilities
