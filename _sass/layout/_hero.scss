@@ -1,0 +1,196 @@
+// ==========================================================================
+// Hero Section
+// ==========================================================================
+
+// Hero with full-bleed background
+.hero {
+  position: relative;
+  width: 100%;
+  height: calc(100vh - var(--header-height)); // Exact viewport height minus header
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  text-align: center;
+  overflow: hidden; // Prevent content from causing scroll
+
+  // Background gradient - extends full width
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(14, 165, 233, 0.05) 0%, transparent 100%);
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  // Grid pattern - extends full width
+  &::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: linear-gradient(rgba(14, 165, 233, 0.1) 1px, transparent 1px),
+                      linear-gradient(90deg, rgba(14, 165, 233, 0.1) 1px, transparent 1px);
+    background-size: 50px 50px;
+    opacity: 0.2;
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  // All direct children above pseudo-elements
+  > * {
+    position: relative;
+    z-index: 1;
+    max-width: 1280px;
+    flex-shrink: 1; // Allow content to shrink if needed
+  }
+
+  p {
+    font-size: clamp(1rem, 2.5vw, 1.3rem); // Responsive font size
+    color: var(--text-gray);
+    margin-bottom: 1.5rem;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+// Hero Logo
+.hero-logo {
+  margin: clamp(1rem, 3vh, 2rem) 0;
+  flex-shrink: 1;
+
+  img {
+    max-width: min(350px, 80vw);
+    width: 100%;
+    height: auto;
+  }
+}
+
+// Hero title highlight
+.hero-title-highlight {
+  display: block;
+  color: var(--neon-blue);
+  text-shadow: 0 0 10px var(--neon-glow);
+}
+
+// Hero Buttons
+.hero-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: clamp(1rem, 3vh, 2rem) 0;
+  flex-shrink: 1;
+}
+
+// Hero Meta
+.hero-meta {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  align-items: center;
+  margin-top: clamp(1rem, 3vh, 3rem);
+  color: var(--text-gray);
+  font-size: clamp(0.8rem, 2vw, 0.95rem);
+  flex-shrink: 1;
+}
+
+.hero-meta-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  svg {
+    color: var(--neon-blue);
+  }
+}
+
+.hero-meta-divider {
+  width: 4px;
+  height: 4px;
+  background: var(--text-gray);
+  border-radius: 50%;
+}
+
+// Scroll Indicator - relative positioning in normal flow
+.scroll-indicator {
+  margin-top: auto; // Push to bottom of flex container
+  padding-top: clamp(0.5rem, 2vh, 2rem);
+  animation: bounce 2s infinite;
+  flex-shrink: 0; // Don't shrink the indicator
+}
+
+.scroll-indicator-border {
+  width: 24px;
+  height: 40px;
+  border: 2px solid var(--text-gray);
+  border-radius: var(--radius-xl);
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0.25rem;
+}
+
+.scroll-indicator-dot {
+  width: 6px;
+  height: 10px;
+  background: var(--neon-blue);
+  border-radius: var(--radius-sm);
+  animation: pulse 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+// Responsive
+@media (max-width: 768px) {
+  .hero {
+    height: auto;
+    min-height: calc(100vh - var(--header-height)); // Ensure at least full viewport
+    min-height: calc(100svh - var(--header-height)); // Use small viewport height for mobile browsers
+    padding: 2rem 1rem;
+  }
+
+  .hero-logo img {
+    max-width: 280px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    width: 100%;
+
+    .cta-button {
+      width: 100%;
+      justify-content: center;
+    }
+  }
+
+  .hero-meta {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .hero-meta-divider {
+    display: none;
+  }
+}

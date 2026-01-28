@@ -1,0 +1,100 @@
+// ==========================================================================
+// Presentations Section
+// ==========================================================================
+
+.presentation-list {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.presentation-item {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 1.5rem;
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-xl);
+  text-decoration: none;
+  transition: all 0.3s ease;
+
+  &:hover {
+    border-color: var(--neon-blue);
+    background: rgba(14, 165, 233, 0.02);
+    transform: translateX(4px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+
+    .presentation-title {
+      color: var(--neon-blue);
+    }
+
+    .presentation-arrow {
+      color: var(--neon-blue);
+    }
+  }
+}
+
+.presentation-date {
+  color: var(--neon-blue);
+  font-family: var(--font-mono);
+  font-size: 0.875rem;
+  width: 80px;
+  flex-shrink: 0;
+}
+
+.presentation-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.presentation-title {
+  color: var(--text-dark);
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+  transition: color 0.3s ease;
+}
+
+.presentation-speaker {
+  color: var(--text-gray);
+  font-size: 0.875rem;
+}
+
+.presentation-arrow {
+  color: var(--text-gray);
+  flex-shrink: 0;
+  transition: color 0.3s ease;
+}
+
+// View all presentations link
+.view-all-link {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.view-all-presentations {
+  color: var(--neon-blue);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+// Responsive
+@media (max-width: 768px) {
+  .presentation-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .presentation-date {
+    width: auto;
+  }
+}

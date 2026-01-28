@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {%- include neon-head.html -%}
+</head>
+<body>
+    {%- include neon-header.html -%}
+
+    <main>
+        {{ content }}
+    </main>
+
+    {%- include neon-footer.html -%}
+
+    <script>
+        // Mobile menu toggle
+        function toggleMobileMenu() {
+            const mobileNav = document.querySelector('.mobile-nav');
+            const toggleButton = document.querySelector('.mobile-menu-toggle');
+            const isOpen = mobileNav.classList.toggle('active');
+            toggleButton.classList.toggle('active', isOpen);
+            toggleButton.setAttribute('aria-expanded', isOpen);
+        }
+
+        // Set current year in footer
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
