@@ -2,8 +2,8 @@
 // Variables & Design Tokens
 // ==========================================================================
 
-// Fonts - Matching V0 project
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Geist+Mono:wght@100..900&display=swap');
+// Fonts are loaded via <link> tags in HTML <head> for better performance
+// See: https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Geist+Mono:wght@100..900&display=swap
 
 // CSS Variables - Light Theme with Neon Blue Accent
 :root {
@@ -20,6 +20,9 @@
   --text-dark: #141414;
   --text-gray: #737373;
   --text-white: #ffffff;
+
+  // Layout dimensions
+  --header-height: 80px;
 
   // Tailwind-style border-radius design tokens
   --radius-sm: 0.25rem;   // 4px - rounded-sm
