@@ -1,0 +1,35 @@
+<header>
+    <div class="header-container">
+        <div class="header-content">
+            <a href="{{ '/' | relative_url }}" class="logo-link">
+                <img src="{{ '/images/lit-20logo-204_cropped.png' | relative_url }}" alt="{{ site.title }}" class="logo-img">
+            </a>
+
+            <nav class="desktop-nav">
+                <a href="{{ '/#about' | relative_url }}">About</a>
+                <a href="{{ '/#events' | relative_url }}">Events</a>
+                <a href="{{ '/#presentations' | relative_url }}">Presentations</a>
+                <a href="https://www.eventbrite.com/e/1978846949495?aff=oddtdtcreator" target="_blank" rel="noopener noreferrer" class="cta-button neon-glow">RSVP Now</a>
+            </nav>
+
+            <button class="mobile-menu-toggle" onclick="toggleMobileMenu()" aria-label="Toggle navigation menu" aria-expanded="false">
+                <svg class="menu-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+                <svg class="close-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </button>
+        </div>
+
+        <nav class="mobile-nav">
+            <a href="{{ '/#about' | relative_url }}" onclick="toggleMobileMenu()">About</a>
+            <a href="{{ '/#events' | relative_url }}" onclick="toggleMobileMenu()">Events</a>
+            <a href="{{ '/#presentations' | relative_url }}" onclick="toggleMobileMenu()">Presentations</a>
+            <a href="https://www.eventbrite.com/e/1978846949495?aff=oddtdtcreator" target="_blank" rel="noopener noreferrer" class="cta-button mobile-cta" onclick="toggleMobileMenu()">RSVP Now</a>
+        </nav>
+    </div>
+</header>
