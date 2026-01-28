@@ -55,6 +55,7 @@ button.cta-button-outline,
   }
 
   &:hover {
+    background: #ebebeb; // Fallback for browsers without OKLCH support
     background: oklch(0.92 0 0);
     color: var(--text-dark);
   }
