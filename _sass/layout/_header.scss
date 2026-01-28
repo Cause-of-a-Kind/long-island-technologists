@@ -124,6 +124,17 @@ header {
   display: none;
 }
 
+// Active state for mobile menu toggle
+.mobile-menu-toggle.active {
+  .menu-icon {
+    display: none;
+  }
+
+  .close-icon {
+    display: block;
+  }
+}
+
 // Responsive
 @media (max-width: 768px) {
   .desktop-nav {

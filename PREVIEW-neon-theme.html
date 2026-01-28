@@ -28,7 +28,7 @@
                 </nav>
 
                 <!-- Mobile Menu Toggle -->
-                <button class="mobile-menu-toggle" onclick="toggleMobileMenu()" aria-label="Toggle menu">
+                <button class="mobile-menu-toggle" onclick="toggleMobileMenu()" aria-label="Toggle navigation menu" aria-expanded="false">
                     <svg class="menu-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                         <line x1="3" y1="12" x2="21" y2="12"></line>
                         <line x1="3" y1="6" x2="21" y2="6"></line>
@@ -387,18 +387,10 @@
         // Mobile menu toggle
         function toggleMobileMenu() {
             const mobileNav = document.querySelector('.mobile-nav');
-            const menuIcon = document.querySelector('.menu-icon');
-            const closeIcon = document.querySelector('.close-icon');
-
-            if (mobileNav.style.display === 'none' || mobileNav.style.display === '') {
-                mobileNav.style.display = 'flex';
-                menuIcon.style.display = 'none';
-                closeIcon.style.display = 'block';
-            } else {
-                mobileNav.style.display = 'none';
-                menuIcon.style.display = 'block';
-                closeIcon.style.display = 'none';
-            }
+            const toggleButton = document.querySelector('.mobile-menu-toggle');
+            const isOpen = mobileNav.classList.toggle('active');
+            toggleButton.classList.toggle('active', isOpen);
+            toggleButton.setAttribute('aria-expanded', isOpen);
         }
 
         // Set current year in footer
