@@ -6,7 +6,7 @@
 .hero {
   position: relative;
   width: 100%;
-  height: calc(100vh - 80px); // Exact viewport height minus header
+  height: calc(100vh - var(--header-height)); // Exact viewport height minus header
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -166,8 +166,8 @@
 @media (max-width: 768px) {
   .hero {
     height: auto;
-    min-height: calc(100vh - 80px); // Ensure at least full viewport
-    min-height: calc(100svh - 80px); // Use small viewport height for mobile browsers
+    min-height: calc(100vh - var(--header-height)); // Ensure at least full viewport
+    min-height: calc(100svh - var(--header-height)); // Use small viewport height for mobile browsers
     padding: 2rem 1rem;
   }
 
