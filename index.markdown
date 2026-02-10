@@ -20,7 +20,7 @@ title: "Long Island Technologists"
     </p>
 
     <div class="hero-buttons">
-        <a href="https://www.eventbrite.com/e/1978846949495?aff=oddtdtcreator" target="_blank" rel="noopener noreferrer" class="cta-button">
+        <a href="https://www.eventbrite.com/e/long-island-technologists-meetup-free-tickets-1982808121467" target="_blank" rel="noopener noreferrer" class="cta-button">
             Join Next Meetup
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <line x1="5" y1="12" x2="19" y2="12"></line>
@@ -70,8 +70,8 @@ title: "Long Island Technologists"
     <div class="event-card event-card-grid">
         <!-- Date Card -->
         <div class="event-date">
-            <span class="event-date-month">January</span>
-            <span class="event-date-day">29</span>
+            <span class="event-date-month">March</span>
+            <span class="event-date-day">19</span>
             <span class="event-date-year">2026</span>
         </div>
 
@@ -105,7 +105,7 @@ title: "Long Island Technologists"
                 </div>
             </div>
 
-            <a href="https://www.eventbrite.com/e/1978846949495?aff=oddtdtcreator" target="_blank" rel="noopener noreferrer" class="cta-button">
+            <a href="https://www.eventbrite.com/e/long-island-technologists-meetup-free-tickets-1982808121467" target="_blank" rel="noopener noreferrer" class="cta-button">
                 RSVP on Eventbrite
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
