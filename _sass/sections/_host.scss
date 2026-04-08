@@ -1,0 +1,31 @@
+// ==========================================================================
+// Host a Presentation Section
+// ==========================================================================
+
+// Full-bleed host wrapper (background extends full width)
+.host-section {
+  width: 100%;
+  background: var(--neon-blue-tint-10);
+  position: relative;
+  overflow: hidden;
+}
+
+// Contained host content
+.host-content {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.host-icon-wrapper {
+  width: 64px;
+  height: 64px;
+  background: var(--neon-blue-tint-20);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.5rem;
+  color: var(--neon-blue);
+}
