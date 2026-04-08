@@ -274,24 +274,24 @@ title: "Long Island Technologists"
     </div>
 </section>
 
-<!-- Newsletter CTA -->
-<section class="newsletter-section">
-    <div class="newsletter-content">
-        <div class="newsletter-icon-wrapper">
+<!-- Host a Presentation CTA -->
+<section class="host-section">
+    <div class="host-content">
+        <div class="host-icon-wrapper">
             <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-                <polyline points="22,6 12,13 2,6"></polyline>
+                <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+                <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
             </svg>
         </div>
 
-        <h2 class="section-title">Want to be a techie too?</h2>
+        <h2 class="section-title">Want to host a presentation at LIT?</h2>
 
         <p class="section-description">
-            Stay in the loop with upcoming events, speaker announcements, and community updates. Join our newsletter and become part of Long Island's growing tech scene.
+            For the Greater Long Island, tech and tech related thought leaders that want to educate, stimulate and cultivate with the LIT community.
         </p>
 
-        <a href="https://causeofakind.us16.list-manage.com/subscribe?u=847ea1526d6523a41ef1eb5a5&id=48d53e9627" target="_blank" rel="noopener noreferrer" class="cta-button">
-            Subscribe to Newsletter
+        <a href="mailto:LIT@causeofakind.com" class="cta-button">
+            Get In Touch
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <line x1="5" y1="12" x2="19" y2="12"></line>
                 <polyline points="12 5 19 12 12 19"></polyline>
@@ -447,24 +447,24 @@ title: "Long Island Technologists"
     </div>
 </section>
 
-<!-- Host a Presentation CTA -->
-<section class="host-section">
-    <div class="host-content">
-        <div class="host-icon-wrapper">
+<!-- Newsletter CTA -->
+<section class="newsletter-section">
+    <div class="newsletter-content">
+        <div class="newsletter-icon-wrapper">
             <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
-                <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
             </svg>
         </div>
 
-        <h2 class="section-title">Want to host a presentation at LIT?</h2>
+        <h2 class="section-title">Want to be a techie too?</h2>
 
         <p class="section-description">
-            For the Greater Long Island, tech and tech related thought leaders that want to educate, stimulate and cultivate with the LIT community.
+            Stay in the loop with upcoming events, speaker announcements, and community updates. Join our newsletter and become part of Long Island's growing tech scene.
         </p>
 
-        <a href="mailto:LIT@causeofakind.com" class="cta-button">
-            Get In Touch
+        <a href="https://causeofakind.us16.list-manage.com/subscribe?u=847ea1526d6523a41ef1eb5a5&id=48d53e9627" target="_blank" rel="noopener noreferrer" class="cta-button">
+            Subscribe to Newsletter
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <line x1="5" y1="12" x2="19" y2="12"></line>
                 <polyline points="12 5 19 12 12 19"></polyline>
