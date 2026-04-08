@@ -335,7 +335,7 @@ title: "Long Island Technologists"
                 </li>
             </ul>
             <a href="mailto:LIT@causeofakind.com?subject=Food%20Sponsor%20Inquiry" class="cta-button cta-button-outline sponsor-cta">
-                Become a Food Sponsor
+                Email Us
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <line x1="5" y1="12" x2="19" y2="12"></line>
                     <polyline points="12 5 19 12 12 19"></polyline>
@@ -367,7 +367,7 @@ title: "Long Island Technologists"
                 </li>
             </ul>
             <a href="mailto:LIT@causeofakind.com?subject=Beverage%20Sponsor%20Inquiry" class="cta-button cta-button-outline sponsor-cta">
-                Become a Beverage Sponsor
+                Email Us
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <line x1="5" y1="12" x2="19" y2="12"></line>
                     <polyline points="12 5 19 12 12 19"></polyline>
@@ -400,7 +400,7 @@ title: "Long Island Technologists"
                 </li>
             </ul>
             <a href="mailto:LIT@causeofakind.com?subject=Vendor%20Sponsor%20Inquiry" class="cta-button cta-button-outline sponsor-cta">
-                Become a Vendor Sponsor
+                Email Us
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <line x1="5" y1="12" x2="19" y2="12"></line>
                     <polyline points="12 5 19 12 12 19"></polyline>
@@ -437,7 +437,7 @@ title: "Long Island Technologists"
                 </li>
             </ul>
             <a href="mailto:LIT@causeofakind.com?subject=Title%20Sponsor%20Inquiry" class="cta-button sponsor-cta">
-                Become the Title Sponsor
+                Email Us
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <line x1="5" y1="12" x2="19" y2="12"></line>
                     <polyline points="12 5 19 12 12 19"></polyline>
