@@ -446,3 +446,29 @@ title: "Long Island Technologists"
         </div>
     </div>
 </section>
+
+<!-- Host a Presentation CTA -->
+<section class="host-section">
+    <div class="host-content">
+        <div class="host-icon-wrapper">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+                <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+            </svg>
+        </div>
+
+        <h2 class="section-title">Want to host a presentation at LIT?</h2>
+
+        <p class="section-description">
+            For the Greater Long Island, tech and tech related thought leaders that want to educate, stimulate and cultivate with the LIT community.
+        </p>
+
+        <a href="mailto:LIT@causeofakind.com" class="cta-button">
+            Get In Touch
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+        </a>
+    </div>
+</section>
