@@ -2,94 +2,96 @@
 // Sponsors Section
 // ==========================================================================
 
-.sponsor-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 2rem;
-  margin-top: 3rem;
-}
-
-.sponsor-card {
-  display: flex;
-  flex-direction: column;
-  padding: 2rem;
-
-  h3 {
-    margin-bottom: 0.5rem;
+#sponsors {
+  .sponsor-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
   }
-}
 
-.sponsor-price {
-  font-size: 2rem;
-  font-weight: 700;
-  color: var(--text-dark);
-  margin-bottom: 1.5rem;
-
-  span {
-    font-size: 1rem;
-    font-weight: 400;
-    color: var(--text-gray);
-  }
-}
-
-.sponsor-perks {
-  list-style: none;
-  padding: 0;
-  margin: 0 0 2rem;
-  flex-grow: 1;
-
-  li {
+  .sponsor-card {
     display: flex;
-    align-items: flex-start;
-    gap: 0.5rem;
-    color: var(--text-gray);
-    font-size: 0.95rem;
-    line-height: 1.6;
-    margin-bottom: 0.75rem;
+    flex-direction: column;
+    padding: 2rem;
 
-    svg {
-      color: var(--neon-blue);
-      flex-shrink: 0;
-      margin-top: 0.2rem;
+    h3 {
+      margin-bottom: 0.5rem;
     }
   }
-}
 
-.sponsor-cta {
-  width: 100%;
-  margin-top: auto;
-}
+  .sponsor-price {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: 1.5rem;
 
-// Featured card (Title Sponsor)
-.sponsor-card-featured {
-  border-color: var(--neon-blue);
-  position: relative;
-  box-shadow: 0 0 20px var(--neon-glow);
-
-  &:hover {
-    box-shadow: 0 8px 16px var(--shadow-10), 0 0 20px var(--neon-glow);
+    span {
+      font-size: 1rem;
+      font-weight: 400;
+      color: var(--text-gray);
+    }
   }
-}
 
-.sponsor-featured-badge {
-  position: absolute;
-  top: -12px;
-  left: 50%;
-  transform: translateX(-50%);
-  background: var(--neon-blue);
-  color: var(--text-white);
-  padding: 0.25rem 1rem;
-  border-radius: var(--radius-md);
-  font-size: 0.8rem;
-  font-weight: 600;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  white-space: nowrap;
+  .sponsor-perks {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 2rem;
+    flex-grow: 1;
+
+    li {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.5rem;
+      color: var(--text-gray);
+      font-size: 0.95rem;
+      line-height: 1.6;
+      margin-bottom: 0.75rem;
+
+      svg {
+        color: var(--neon-blue);
+        flex-shrink: 0;
+        margin-top: 0.2rem;
+      }
+    }
+  }
+
+  .sponsor-cta {
+    width: 100%;
+    margin-top: auto;
+  }
+
+  // Featured card (Title Sponsor)
+  .sponsor-card-featured {
+    border-color: var(--neon-blue);
+    position: relative;
+    box-shadow: 0 0 20px var(--neon-glow);
+
+    &:hover {
+      box-shadow: 0 8px 16px var(--shadow-10), 0 0 20px var(--neon-glow);
+    }
+  }
+
+  .sponsor-featured-badge {
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--neon-blue);
+    color: var(--text-white);
+    padding: 0.25rem 1rem;
+    border-radius: var(--radius-md);
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    white-space: nowrap;
+  }
 }
 
 // Responsive
 @media (max-width: 768px) {
-  .sponsor-grid {
+  #sponsors .sponsor-grid {
     grid-template-columns: 1fr;
   }
 }
