@@ -275,7 +275,7 @@ title: "Long Island Technologists"
 </section>
 
 <!-- Host a Presentation CTA -->
-<section class="host-section">
+<section id="host" class="host-section">
     <div class="host-content">
         <div class="host-icon-wrapper">
             <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
