@@ -312,6 +312,36 @@ title: "Long Island Technologists"
     </div>
 </section>
 
+<!-- Our Sponsors -->
+<section id="our-sponsors" class="content-section">
+    <div class="section-header">
+        <span class="section-label">.our_sponsors</span>
+        <h2 class="section-title">Our Sponsors</h2>
+        <p class="section-description">
+            LIT is powered by the generosity of these businesses. We're grateful to the past and active sponsors who help make our community possible.
+        </p>
+    </div>
+
+    <div class="sponsors-showcase">
+        {% for sponsor in site.data.sponsors %}
+        <a href="{{ sponsor.url }}" target="_blank" rel="noopener noreferrer" class="card showcase-card">
+            <div class="showcase-logo">
+                <img src="{{ '/images/sponsors/' | append: sponsor.logo | relative_url }}" alt="{{ sponsor.name }} logo" loading="lazy">
+            </div>
+            <h3 class="showcase-name">{{ sponsor.name }}</h3>
+            <p class="showcase-blurb">{{ sponsor.blurb }}</p>
+            <span class="showcase-link">
+                Visit website
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="7" y1="17" x2="17" y2="7"></line>
+                    <polyline points="7 7 17 7 17 17"></polyline>
+                </svg>
+            </span>
+        </a>
+        {% endfor %}
+    </div>
+</section>
+
 <!-- Sponsor LIT -->
 <section id="sponsors" class="content-section">
     <div class="section-header">
