@@ -190,6 +190,18 @@ title: "Long Island Technologists"
     </div>
 
     <div class="presentation-list">
+        <a href="/updates/2026/03/12/Ryan-March-2026-meetup.html" class="presentation-item">
+            <span class="presentation-date">Mar 2026</span>
+            <div class="presentation-content">
+                <div class="presentation-title">Be Your Own Revenue Architect</div>
+                <div class="presentation-speaker">Ryan Reilly</div>
+            </div>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="presentation-arrow">
+                <line x1="7" y1="17" x2="17" y2="7"></line>
+                <polyline points="7 7 17 7 17 17"></polyline>
+            </svg>
+        </a>
+
         <a href="/updates/2025/12/09/Nir-December-2025-meetup.html" class="presentation-item">
             <span class="presentation-date">Dec 2025</span>
             <div class="presentation-content">
