@@ -190,7 +190,7 @@ title: "Long Island Technologists"
     </div>
 
     <div class="presentation-list">
-        <a href="/updates/2026/03/12/Ryan-March-2026-meetup.html" class="presentation-item">
+        <a href="/updates/2026/03/19/Ryan-March-2026-meetup.html" class="presentation-item">
             <span class="presentation-date">Mar 2026</span>
             <div class="presentation-content">
                 <div class="presentation-title">Be Your Own Revenue Architect</div>
