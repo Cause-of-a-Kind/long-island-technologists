@@ -1,0 +1,61 @@
+# =============================================================================
+# LIT Sponsors
+# -----------------------------------------------------------------------------
+# Each entry renders one card in the "Our Sponsors" section on the home page.
+#
+# To add a sponsor:   copy a block below and fill in the fields.
+# To remove one:      delete its block.
+# To reorder:         move blocks up or down (they render top-to-bottom).
+#
+# Fields:
+#   name   – Business name (used as the card heading and image alt text)
+#   logo   – Filename of the logo inside /images/sponsors/
+#            (PNG or SVG; a transparent background looks best)
+#   url    – Website the logo + card link out to
+#   blurb  – 1–2 sentence description shown on the card
+# =============================================================================
+
+- name: "Cause of a Kind"
+  logo: "cause-of-a-kind.svg"
+  url: "https://www.causeofakind.com"
+  blurb: "A Long Island–based software studio that builds and modernizes mission-critical software, customer portals, and AI-enabled workflows for mid-market and mission-driven organizations. As the team behind LIT, they're committed to growing the region's tech community."
+
+- name: "Vonage"
+  logo: "vonage.png"
+  url: "https://www.vonage.com"
+  blurb: "A global cloud communications leader (part of Ericsson) whose APIs let developers embed voice, video, messaging, and verification into their apps, alongside unified communications and contact center solutions for businesses."
+
+- name: "G2i"
+  logo: "g2i.svg"
+  url: "https://www.g2i.co"
+  blurb: "A video-based hiring platform that connects companies with thousands of rigorously vetted contract and full-time engineers, matching teams with top remote talent in days rather than months. They also champion developer well-being through their Developer Health programs and the React Miami conference."
+
+- name: "Accelerate Long Island"
+  logo: "accelerate-long-island.webp"
+  url: "https://accelerateli.org"
+  blurb: "A regional nonprofit that fosters Long Island's innovation economy by helping early-stage startups in tech, life sciences, and energy get off the ground. Through funding, mentorship, events, and a network connecting the region's universities and research institutions, they turn local research into thriving companies."
+
+- name: "Flux Coffee"
+  logo: "flux-coffee.webp"
+  url: "https://www.fluxcoffee.com"
+  blurb: "A specialty coffee roaster and café in Farmingdale, NY, known for pioneering cold brew on tap and roasting single-origin beans fresh daily. From whole bean to kegged cold brew, they ethically source and hand-brew every cup for the Long Island community and beyond."
+
+- name: "Island Rock"
+  logo: "island-rock.svg"
+  url: "https://islandrock.com"
+  blurb: "Long Island's premier indoor rock climbing facility, serving the climbing community in Plainview, NY since 1996. With thousands of square feet of top-rope, lead, and bouldering routes plus lessons for all skill levels, they're a welcoming spot for first-timers and seasoned climbers alike."
+
+- name: "Strictly From Nowhere"
+  logo: "strictly-from-nowhere.png"
+  url: "https://www.causeofakind.com/strictly-from-nowhere"
+  blurb: "A podcast experiment by Cause of a Kind where founders Justin Abrams and Mike Rispoli interview entrepreneurs, dig into tech, business, and AI, and document the unfiltered journey of building from nothing. Stand up. Show up. Build."
+
+- name: "Carolina Luna Photography"
+  logo: "carolina-luna.png"
+  url: "https://carolinalunaphotography.com"
+  blurb: "A Long Island–based personal branding and lifestyle photographer who helps entrepreneurs, coaches, and founders show up authentically through professional headshots and brand imagery. Her brand-alignment process pairs two decades of photography experience with strategy to capture each client's unique story."
+
+- name: "Big Ode Productions"
+  logo: "big-ode.webp"
+  url: "https://big-ode.com"
+  blurb: "An award-winning cinematic production studio based on Long Island and NYC, crafting strategic, high-impact films for mission-driven organizations and visionary founders. With a \"Narrative First\" approach and two decades of experience, they turn complex missions into stories that command attention and build trust."
