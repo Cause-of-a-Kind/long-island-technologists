@@ -133,12 +133,21 @@
     padding: 1rem 1.25rem;
     background: var(--bg-light, #f7f7f7);
     border-radius: var(--radius-lg);
+    // Belt-and-suspenders: clip anything that somehow exceeds the plate so a
+    // logo can never spill over the card text.
+    overflow: hidden;
 
     img {
-      max-width: 100%;
-      max-height: 100%;
-      width: auto;
-      height: auto;
+      // Logos ship at large intrinsic sizes (some are 1000-1548px wide). As a
+      // flex item, the image's automatic minimum size is its intrinsic width,
+      // which overrides `max-width` and makes wide logos overflow the plate.
+      // Sizing the image to fill the plate and letting `object-fit: contain`
+      // scale it down (with `min-width: 0` to permit shrinking) keeps every
+      // logo neatly inside its plate regardless of intrinsic dimensions.
+      display: block;
+      width: 100%;
+      height: 100%;
+      min-width: 0;
       object-fit: contain;
     }
   }
