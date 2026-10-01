@@ -1,0 +1,500 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>LIT Brand Style Guide</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  @page { size: Letter; margin: 0; }
+  :root {
+    --neon-blue: #0ea5e9;
+    --neon-glow: rgba(14, 165, 233, 0.4);
+    --tint-2: rgba(14, 165, 233, 0.02);
+    --tint-5: rgba(14, 165, 233, 0.05);
+    --tint-10: rgba(14, 165, 233, 0.1);
+    --tint-20: rgba(14, 165, 233, 0.2);
+    --light-bg: #fafafa;
+    --card-bg: #f5f5f5;
+    --border: #e0e0e0;
+    --dark: #141414;
+    --gray: #737373;
+    --white: #ffffff;
+    --sans: "Inter", -apple-system, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+    --mono: "Geist Mono", "Courier New", monospace;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { background: var(--light-bg); }
+  body { font-family: var(--sans); color: var(--dark); font-size: 10.5pt; line-height: 1.6; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+
+  .page { width: 8.5in; height: 11in; padding: 0.6in 0.75in 0.6in; position: relative; overflow: hidden; page-break-after: always; background: var(--light-bg); }
+  .page:last-child { page-break-after: auto; }
+  .page::before { content: ""; position: absolute; inset: 0; background: linear-gradient(135deg, var(--tint-5) 0%, transparent 60%); z-index: 0; }
+  .page > * { position: relative; z-index: 1; }
+  .folio { position: absolute; left: 0.75in; right: 0.75in; bottom: 0.4in; display: flex; justify-content: space-between; font-family: var(--mono); font-size: 7.5pt; color: var(--gray); letter-spacing: 0.08em; text-transform: uppercase; border-top: 1px solid var(--border); padding-top: 8pt; }
+
+  .label { font-family: var(--mono); color: var(--neon-blue); font-size: 9pt; letter-spacing: 0.1em; text-transform: uppercase; display: block; margin-bottom: 8pt; }
+  h1 { font-size: 40pt; font-weight: 700; line-height: 1.1; letter-spacing: -0.01em; }
+  h2 { font-size: 24pt; font-weight: 700; line-height: 1.15; margin-bottom: 8pt; }
+  h3 { font-size: 13pt; font-weight: 600; margin-bottom: 6pt; }
+  h4 { font-size: 10pt; font-weight: 600; margin-bottom: 4pt; }
+  p { color: var(--gray); line-height: 1.75; margin-bottom: 8pt; }
+  .lede { font-size: 11pt; max-width: 5.8in; margin-bottom: 14pt; line-height: 1.6; }
+  .hl { color: var(--neon-blue); text-shadow: 0 0 10px var(--neon-glow); }
+  code, .mono { font-family: var(--mono); font-size: 8.5pt; }
+  code { background: var(--tint-10); color: #0369a1; padding: 1pt 4pt; border-radius: 3pt; }
+
+  .divider { height: 2px; background: linear-gradient(90deg, transparent, var(--neon-blue), transparent); box-shadow: 0 0 10px var(--neon-glow); margin: 14pt 0; }
+  .grid-bg { position: absolute; inset: 0; z-index: 0;
+    background-image: linear-gradient(var(--tint-10) 1px, transparent 1px), linear-gradient(90deg, var(--tint-10) 1px, transparent 1px);
+    background-size: 36px 36px; opacity: 0.55; }
+
+  .card { background: var(--card-bg); border: 1px solid var(--border); border-radius: 9pt; padding: 12pt; }
+  .card p { font-size: 9.5pt; margin-bottom: 0; }
+  .cols-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 12pt; }
+  .cols-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12pt; }
+  .stack > * + * { margin-top: 8pt; }
+
+  /* Cover */
+  .cover { display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; }
+  .cover .grid-bg { opacity: 0.8; }
+  .cover img { width: 3.6in; margin-bottom: 30pt; }
+  .cover h1 { font-size: 44pt; margin-bottom: 12pt; }
+  .cover p { font-size: 12.5pt; max-width: 5in; }
+  .cover .meta { margin-top: 26pt; display: flex; gap: 14pt; align-items: center; font-size: 9.5pt; color: var(--gray); }
+  .dot { width: 4px; height: 4px; border-radius: 50%; background: var(--gray); }
+
+  /* TOC */
+  .toc { list-style: none; margin-top: 8pt; }
+  .toc li { display: flex; align-items: baseline; gap: 14pt; padding: 11pt 14pt; border: 1px solid var(--border); background: var(--card-bg); border-radius: 9pt; margin-bottom: 7pt; }
+  .toc .n { font-family: var(--mono); color: var(--neon-blue); font-size: 9pt; width: 26pt; }
+  .toc .t { font-weight: 600; flex: 1; }
+  .toc .d { color: var(--gray); font-size: 9pt; }
+
+  /* Color */
+  .swatch { border: 1px solid var(--border); border-radius: 9pt; overflow: hidden; background: var(--white); }
+  .swatch .chip { height: 68pt; }
+  .swatch .info { padding: 9pt 11pt; }
+  .swatch .name { font-weight: 600; font-size: 10pt; }
+  .swatch .vals { font-family: var(--mono); font-size: 7.8pt; color: var(--gray); line-height: 1.55; }
+  .hero-swatch .chip { height: 84pt; box-shadow: inset 0 0 0 0; display: flex; align-items: flex-end; padding: 12pt; color: #fff; font-family: var(--mono); font-size: 9pt; letter-spacing: 0.1em; }
+  .tints { display: grid; grid-template-columns: repeat(5, 1fr); gap: 8pt; }
+  .tint { border: 1px solid var(--border); border-radius: 7pt; overflow: hidden; background: #fff; }
+  .tint .chip { height: 30pt; }
+  .tint .vals { padding: 6pt 8pt; font-family: var(--mono); font-size: 7.2pt; color: var(--gray); line-height: 1.45; }
+  .ratio { display: flex; height: 22pt; border-radius: 6pt; overflow: hidden; border: 1px solid var(--border); margin: 6pt 0 4pt; }
+  table { width: 100%; border-collapse: collapse; font-size: 9pt; }
+  th { text-align: left; font-family: var(--mono); font-weight: 500; font-size: 7.8pt; color: var(--gray); text-transform: uppercase; letter-spacing: 0.08em; padding: 6pt 8pt; border-bottom: 1px solid var(--border); }
+  td { padding: 6pt 8pt; border-bottom: 1px solid var(--border); vertical-align: top; }
+  td .mono { color: var(--dark); }
+  .pass { color: #15803d; font-weight: 600; }
+  .warn { color: #b45309; font-weight: 600; }
+
+  /* Type */
+  .type-row { display: grid; grid-template-columns: 1.3in 1fr; gap: 14pt; align-items: baseline; padding: 6pt 0; border-bottom: 1px solid var(--border); }
+  .type-row .spec { font-family: var(--mono); font-size: 7.8pt; color: var(--gray); line-height: 1.5; }
+  .specimen { border: 1px solid var(--border); border-radius: 9pt; background: #fff; padding: 12pt 14pt; }
+  .specimen .big { font-size: 38pt; line-height: 1; font-weight: 700; }
+  .specimen .chars { font-size: 11pt; color: var(--gray); margin-top: 8pt; letter-spacing: 0.02em; }
+
+  /* Components */
+  .btn { display: inline-flex; align-items: center; gap: 6pt; padding: 6pt 12pt; border-radius: 4.5pt; font-weight: 500; font-size: 10pt; background: var(--neon-blue); color: #fff; white-space: nowrap; }
+  .btn.glow { box-shadow: 0 0 20px var(--neon-glow); }
+  .btn.outline { background: transparent; color: var(--dark); border: 1px solid var(--border); }
+  .btn.hover { opacity: 0.7; }
+  .btn.outline.hover { background: #ebebeb; opacity: 1; }
+  .demo { border: 1px dashed var(--border); border-radius: 9pt; padding: 14pt; background: #fff; display: flex; gap: 12pt; flex-wrap: wrap; align-items: center; }
+  .caption { font-family: var(--mono); font-size: 7.6pt; color: var(--gray); margin-top: 5pt; }
+  .icon-box { width: 34pt; height: 34pt; border-radius: 6pt; background: var(--tint-10); color: var(--neon-blue); display: flex; align-items: center; justify-content: center; margin-bottom: 9pt; }
+  .icon-circle { width: 44pt; height: 44pt; border-radius: 50%; background: var(--tint-10); color: var(--neon-blue); display: flex; align-items: center; justify-content: center; }
+  .pres { display: flex; align-items: center; gap: 14pt; padding: 8pt 14pt; background: var(--card-bg); border: 1px solid var(--border); border-radius: 9pt; }
+  .pres.on { border-color: var(--neon-blue); background: var(--tint-2); box-shadow: 0 4px 8px rgba(0,0,0,0.05); }
+  .pres .date { font-family: var(--mono); color: var(--neon-blue); font-size: 8.5pt; width: 54pt; }
+  .pres .title { font-weight: 600; font-size: 10pt; }
+  .pres.on .title { color: var(--neon-blue); }
+  .pres .who { color: var(--gray); font-size: 8.5pt; }
+  .badge { display: inline-block; white-space: nowrap; background: var(--neon-blue); color: #fff; padding: 2pt 9pt; border-radius: 4.5pt; font-size: 7.5pt; font-weight: 600; letter-spacing: 0.05em; text-transform: uppercase; }
+
+  /* Lists */
+  ul.clean { list-style: none; }
+  ul.clean li { position: relative; padding-left: 14pt; margin-bottom: 5pt; color: var(--gray); font-size: 9.5pt; line-height: 1.6; }
+  ul.clean li::before { content: ""; position: absolute; left: 0; top: 6.5pt; width: 5pt; height: 5pt; border-radius: 50%; background: var(--neon-blue); }
+  ul.no li::before { background: #d4d4d4; }
+  .do { border-top: 3px solid var(--neon-blue); }
+  .dont { border-top: 3px solid #d4d4d4; }
+
+  /* Logo page */
+  .logo-stage { border-radius: 10pt; border: 1px solid var(--border); display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden; }
+  .clearspace { position: relative; padding: 22pt; outline: 1px dashed var(--neon-blue); }
+  .clearspace img { display: block; width: 2.6in; }
+  .clearspace .x { position: absolute; font-family: var(--mono); font-size: 7.5pt; color: var(--neon-blue); }
+
+  pre { font-family: var(--mono); font-size: 7.8pt; line-height: 1.55; background: var(--dark); color: #e5e5e5; border-radius: 9pt; padding: 13pt 15pt; white-space: pre-wrap; }
+  pre .c { color: #737373; } pre .k { color: #7dd3fc; } pre .v { color: #fbbf24; }
+</style>
+</head>
+<body>
+
+<!-- 1 COVER -->
+<section class="page cover">
+  <div class="grid-bg"></div>
+  <img src="../images/lit-20logo-204_cropped.png" alt="Long Island Technologists">
+  <span class="label">.brand_style_guide</span>
+  <h1>Where Long Island's<br><span class="hl">Tech Community</span><br>Connects</h1>
+  <p>The visual and verbal identity of Long Island Technologists (LIT). One reference for colors, type, components, and voice, so every page, post, deck, and email feels like the same room.</p>
+  <div class="meta"><span>Version 1.0</span><span class="dot"></span><span>October 2026</span><span class="dot"></span><span>Farmingdale, NY</span></div>
+  <div class="folio"><span>Long Island Technologists</span><span>Presented by Cause of a Kind</span></div>
+</section>
+
+<!-- 2 CONTENTS + ESSENCE -->
+<section class="page">
+  <span class="label">.contents</span>
+  <h2>What's inside</h2>
+  <ul class="toc">
+    <li><span class="n">01</span><span class="t">Brand Essence</span><span class="d">Who we are and how we sound</span></li>
+    <li><span class="n">02</span><span class="t">Logo</span><span class="d">Lockup, clear space, misuse</span></li>
+    <li><span class="n">03</span><span class="t">Color</span><span class="d">Neon blue, neutrals, tints, contrast</span></li>
+    <li><span class="n">04</span><span class="t">Typography</span><span class="d">Inter, Geist Mono, the type scale</span></li>
+    <li><span class="n">05</span><span class="t">Components</span><span class="d">Buttons, cards, labels, lists</span></li>
+    <li><span class="n">06</span><span class="t">Layout, Effects and Iconography</span><span class="d">Grid, spacing, radius, glow, icons</span></li>
+    <li><span class="n">07</span><span class="t">Voice and Copy</span><span class="d">Tone, vocabulary, sample lines</span></li>
+    <li><span class="n">08</span><span class="t">Token Reference</span><span class="d">Copy and paste values for builders and AI skills</span></li>
+  </ul>
+  <div class="divider"></div>
+  <span class="label">01 .brand_essence</span>
+  <div class="cols-2">
+    <div>
+      <h3>Who we are</h3>
+      <p>A collective of curious and passionate technologists bound together by a love for technology and a mission to strengthen the local tech community. Monthly meetups at Flux Coffee in Farmingdale, talks from industry leaders, and real connection.</p>
+    </div>
+    <div>
+      <h3>Brand personality</h3>
+      <ul class="clean">
+        <li><b style="color:var(--dark)">Welcoming.</b> Seasoned pro or first day in tech, there's a seat for you.</li>
+        <li><b style="color:var(--dark)">Technical, never stuffy.</b> Code nods like <code>.what_we_do</code>, delivered with a smile.</li>
+        <li><b style="color:var(--dark)">Local and proud.</b> Long Island first, always.</li>
+        <li><b style="color:var(--dark)">Bright and clean.</b> Light canvas, one electric accent.</li>
+      </ul>
+    </div>
+  </div>
+  <div class="folio"><span>LIT Brand Style Guide</span><span>02</span></div>
+</section>
+
+<!-- 3 LOGO -->
+<section class="page">
+  <span class="label">02 .logo</span>
+  <h2>The lockup</h2>
+  <p class="lede">A heavy <b style="color:var(--dark)">LONG</b> beside a light <b style="color:var(--dark)">ISLAND</b>, with a widely tracked <b style="color:var(--dark)">TECHNOLOGISTS</b> beneath, all set over a soft gray silhouette of Long Island itself. The weight contrast is the signature. Never rebuild it in live type.</p>
+
+  <div class="cols-2" style="margin-bottom:14pt">
+    <div>
+      <div class="logo-stage" style="height:2.2in;background:#fafafa">
+        <div class="grid-bg" style="opacity:.5"></div>
+        <div class="clearspace">
+          <img src="../images/lit-20logo-204_cropped.png" alt="">
+          <span class="x" style="top:4pt;left:50%;transform:translateX(-50%)">X</span>
+          <span class="x" style="bottom:4pt;left:50%;transform:translateX(-50%)">X</span>
+          <span class="x" style="left:6pt;top:50%;transform:translateY(-50%)">X</span>
+          <span class="x" style="right:6pt;top:50%;transform:translateY(-50%)">X</span>
+        </div>
+      </div>
+      <div class="caption">Clear space X = cap height of "LONG" on all sides</div>
+    </div>
+    <div>
+      <div class="logo-stage" style="height:2.2in;background:#ffffff">
+        <img src="../images/lit-20logo-204_cropped.png" alt="" style="width:1.4in">
+      </div>
+      <div class="caption">Header usage: 40px tall (h-10), max 180px wide</div>
+    </div>
+  </div>
+
+  <table style="margin-bottom:14pt">
+    <tr><th>File</th><th>Use it for</th></tr>
+    <tr><td class="mono">images/lit-20logo-204_cropped.png</td><td>Primary. 420 x 208, transparent. Header, footer, hero (max 350px), slides, social.</td></tr>
+    <tr><td class="mono">images/lit-20logo-204.png</td><td>Square 500 x 500 with padding. Avatars, profile images, favicons.</td></tr>
+    <tr><td class="mono">images/lit-20logo-204.svg</td><td>Rough vector draft only. Not production quality; request a true vector before print work.</td></tr>
+  </table>
+
+  <div class="cols-2">
+    <div class="card do"><h4>Do</h4>
+      <ul class="clean">
+        <li>Place on light backgrounds: <span class="mono">#FAFAFA</span>, <span class="mono">#FFFFFF</span>, <span class="mono">#F5F5F5</span>.</li>
+        <li>Scale proportionally; keep at least 120px wide on screen.</li>
+        <li>Let neon blue live around the logo, not inside it.</li>
+      </ul>
+    </div>
+    <div class="card dont"><h4>Don't</h4>
+      <ul class="clean no">
+        <li>Recolor the wordmark blue or add glow to it.</li>
+        <li>Place on dark or busy photos without a light panel.</li>
+        <li>Stretch, rotate, outline, or drop the island silhouette.</li>
+      </ul>
+    </div>
+  </div>
+  <div class="folio"><span>LIT Brand Style Guide</span><span>03</span></div>
+</section>
+
+<!-- 4 COLOR -->
+<section class="page">
+  <span class="label">03 .color</span>
+  <h2>One neon accent on a light canvas</h2>
+  <p class="lede">The palette is deliberately small. Neutrals do the heavy lifting; neon blue signals action, emphasis, and energy. If everything glows, nothing does.</p>
+
+  <div style="display:grid;grid-template-columns:1.25fr 1fr 1fr;gap:12pt;margin-bottom:12pt">
+    <div class="swatch hero-swatch"><div class="chip" style="background:#0ea5e9;box-shadow:0 0 24px rgba(14,165,233,.45)">PRIMARY</div>
+      <div class="info"><div class="name">Neon Blue</div><div class="vals">HEX #0EA5E9<br>RGB 14 165 233<br>--neon-blue</div></div></div>
+    <div class="swatch"><div class="chip" style="background:#141414;height:84pt"></div>
+      <div class="info"><div class="name">Text Dark</div><div class="vals">HEX #141414<br>RGB 20 20 20<br>--text-dark</div></div></div>
+    <div class="swatch"><div class="chip" style="background:#737373;height:84pt"></div>
+      <div class="info"><div class="name">Text Gray</div><div class="vals">HEX #737373<br>RGB 115 115 115<br>--text-gray</div></div></div>
+  </div>
+  <div class="cols-3" style="grid-template-columns:repeat(4,1fr);margin-bottom:16pt">
+    <div class="swatch"><div class="chip" style="background:#fafafa;height:34pt"></div><div class="info"><div class="name">Light BG</div><div class="vals">#FAFAFA<br>--light-bg</div></div></div>
+    <div class="swatch"><div class="chip" style="background:#f5f5f5;height:34pt"></div><div class="info"><div class="name">Card BG</div><div class="vals">#F5F5F5<br>--card-bg</div></div></div>
+    <div class="swatch"><div class="chip" style="background:#e0e0e0;height:34pt"></div><div class="info"><div class="name">Border</div><div class="vals">#E0E0E0<br>--border-color</div></div></div>
+    <div class="swatch"><div class="chip" style="background:#ffffff;height:34pt"></div><div class="info"><div class="name">White</div><div class="vals">#FFFFFF<br>--text-white</div></div></div>
+  </div>
+
+  <h4>Neon blue tints and glow</h4>
+  <div class="tints" style="margin-bottom:14pt">
+    <div class="tint"><div class="chip" style="background:rgba(14,165,233,.02)"></div><div class="vals">2%<br>hover rows</div></div>
+    <div class="tint"><div class="chip" style="background:rgba(14,165,233,.05)"></div><div class="vals">5%<br>section washes</div></div>
+    <div class="tint"><div class="chip" style="background:rgba(14,165,233,.10)"></div><div class="vals">10%<br>icon tiles, grid</div></div>
+    <div class="tint"><div class="chip" style="background:rgba(14,165,233,.20)"></div><div class="vals">20%<br>icon tile hover</div></div>
+    <div class="tint"><div class="chip" style="background:rgba(14,165,233,.40)"></div><div class="vals">40%<br>--neon-glow</div></div>
+  </div>
+
+  <div class="cols-2">
+    <div>
+      <h4>Proportion</h4>
+      <div class="ratio"><div style="width:62%;background:#fafafa"></div><div style="width:14%;background:#f5f5f5"></div><div style="width:14%;background:#141414"></div><div style="width:4%;background:#737373"></div><div style="width:6%;background:#0ea5e9"></div></div>
+      <div class="caption">~60 light bg / 15 cards / 15 dark text / 5 gray / 5 neon</div>
+    </div>
+    <div>
+      <h4>Contrast (WCAG 2.1)</h4>
+      <table>
+        <tr><td>#141414 on #FAFAFA</td><td class="pass">17.6 : 1 AAA</td></tr>
+        <tr><td>#737373 on #FAFAFA</td><td class="pass">4.5 : 1 AA</td></tr>
+        <tr><td>#FFFFFF on #0EA5E9</td><td class="warn">2.8 : 1 large / UI only</td></tr>
+        <tr><td>#0EA5E9 on #FAFAFA</td><td class="warn">2.7 : 1 large / UI only</td></tr>
+      </table>
+    </div>
+  </div>
+  <p style="font-size:8.5pt;margin-top:8pt">Neon blue text works for labels, links, and display type at 18pt+ or 14pt bold. For small body copy that must be blue, darken to <span class="mono">#0369A1</span> (5.7 : 1).</p>
+  <div class="folio"><span>LIT Brand Style Guide</span><span>04</span></div>
+</section>
+
+<!-- 5 TYPE -->
+<section class="page">
+  <span class="label">04 .typography</span>
+  <h2>Inter speaks. Geist Mono labels.</h2>
+  <p class="lede">Inter carries every headline and paragraph. Geist Mono is the technologist's accent: section labels, dates, metadata. Both are free on Google Fonts.</p>
+
+  <div class="cols-2" style="margin-bottom:8pt">
+    <div class="specimen"><div class="label" style="margin:0 0 8pt">Primary / Sans</div><div class="big">Inter Aa</div>
+      <div class="chars" style="font-size:9.5pt">ABCDEFGHIJKLMNOPQRSTUVWXYZ<br>abcdefghijklmnopqrstuvwxyz 0123456789</div>
+      <div class="caption" style="margin-top:10pt">Weights: 400 Regular / 500 Medium / 600 Semibold / 700 Bold</div></div>
+    <div class="specimen"><div class="label" style="margin:0 0 8pt">Accent / Mono</div><div class="big" style="font-family:var(--mono);font-weight:500;font-size:32pt">Geist Mono</div>
+      <div class="chars" style="font-family:var(--mono);font-size:9.5pt">ABCDEFGHIJKLMNOPQRSTUVWXYZ<br>abcdefghijklmnopqrstuvwxyz {}.;_</div>
+      <div class="caption" style="margin-top:10pt">Fallback: "Courier New", monospace</div></div>
+  </div>
+
+  <div class="type-row"><div class="spec">H1 / Hero<br>Inter 700<br>56px (40px mobile)<br>line 1.2</div><div style="font-size:24pt;font-weight:700;line-height:1.15">Where Long Island's <span class="hl">Tech Community</span> Connects</div></div>
+  <div class="type-row"><div class="spec">H2 / Section title<br>Inter 700<br>40px</div><div style="font-size:22pt;font-weight:700">Building Long Island's Tech Scene</div></div>
+  <div class="type-row"><div class="spec">H3 / Card title<br>Inter 600<br>24px (20px in cards)</div><div style="font-size:15pt;font-weight:600">Want to host a presentation at LIT?</div></div>
+  <div class="type-row"><div class="spec">Section label<br>Geist Mono 400<br>14px, caps, +0.1em<br>neon blue</div><div><span class="label" style="margin:0">.upcoming_event</span></div></div>
+  <div class="type-row"><div class="spec">Body / Lead<br>Inter 400, 16px / 17.6px<br>line 1.8, gray</div><div><p style="margin:0">Join us for monthly meetups featuring presentations from industry leaders, networking opportunities, and a community of passionate technologists.</p></div></div>
+  <div class="type-row" style="border:0"><div class="spec">Meta / Date<br>Geist Mono, 14px<br>neon blue</div><div class="mono" style="color:var(--neon-blue);font-size:10pt">JUN 2026 &nbsp;/&nbsp; 7:00 PM EST</div></div>
+
+  <p style="font-size:8.5pt;margin-top:8pt"><b style="color:var(--dark)">Signature move:</b> in the hero, one phrase per headline breaks onto its own line in neon blue with a soft glow (<span class="mono">text-shadow: 0 0 10px rgba(14,165,233,.4)</span>). Use it once per page, max.</p>
+  <div class="folio"><span>LIT Brand Style Guide</span><span>05</span></div>
+</section>
+
+<!-- 6 COMPONENTS -->
+<section class="page">
+  <span class="label">05 .components</span>
+  <h2>Building blocks</h2>
+  <p class="lede">Flat surfaces, hairline borders, generous rounding. Interaction is shown with a blue border, a lift, and a little light.</p>
+
+  <h4>Buttons</h4>
+  <div class="demo">
+    <span class="btn">Join Next Meetup &rarr;</span>
+    <span class="btn glow">RSVP on Eventbrite</span>
+    <span class="btn outline">Subscribe to Newsletter</span>
+    <span class="btn hover">Hover</span>
+    <span class="btn outline hover">Hover</span>
+  </div>
+  <div class="caption">Primary: #0EA5E9 fill, white 500 text, 8 x 16px padding, 6px radius. Hover: opacity .7. Outline: transparent, 1px #E0E0E0, hover #EBEBEB. Optional glow: 0 0 20px rgba(14,165,233,.4). Pair one primary with one outline, never two primaries.</div>
+
+  <h4 style="margin-top:12pt">Cards</h4>
+  <div class="cols-3">
+    <div class="card"><div class="icon-box"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div><h3 style="font-size:11pt">Default</h3><p>#F5F5F5 fill, 1px #E0E0E0 border, 12px radius, 32px padding.</p></div>
+    <div class="card" style="border-color:var(--neon-blue);box-shadow:0 8px 16px rgba(0,0,0,.1);transform:translateY(-4pt)"><div class="icon-box" style="background:var(--tint-20)"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></div><h3 style="font-size:11pt">Hover</h3><p>Border turns neon, lifts 5px, shadow 0 8px 16px at 10%.</p></div>
+    <div class="card" style="position:relative;border-color:var(--neon-blue);padding-top:20pt"><span class="badge" style="position:absolute;top:-8pt;left:50%;transform:translateX(-50%)">Most Popular</span><h3 style="font-size:11pt">Featured</h3><div style="font-size:18pt;font-weight:700">$500<span style="font-size:9pt;font-weight:400;color:var(--gray)"> / event</span></div><p>Badge: neon fill, white 600, caps, +0.05em.</p></div>
+  </div>
+
+  <h4 style="margin-top:12pt">List rows</h4>
+  <div class="stack">
+    <div class="pres"><span class="date">MAR 2026</span><div style="flex:1"><div class="title">Talk title in Inter Semibold</div><div class="who">Speaker name, company</div></div><span style="color:var(--gray)">&rarr;</span></div>
+    <div class="pres on"><span class="date">JUN 2026</span><div style="flex:1"><div class="title">Hover state turns the title neon</div><div class="who">2% tint, neon border, nudges right 4px</div></div><span style="color:var(--neon-blue)">&rarr;</span></div>
+  </div>
+
+  <h4 style="margin-top:12pt">Callout band</h4>
+  <div style="background:var(--tint-5);border-radius:9pt;padding:12pt;text-align:center;display:flex;align-items:center;justify-content:center;gap:16pt">
+    <div class="icon-circle"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
+    <div style="font-weight:700;font-size:14pt">Want to be a techie too?</div>
+    <span class="btn">Subscribe to Newsletter &rarr;</span>
+  </div>
+  <div class="folio"><span>LIT Brand Style Guide</span><span>06</span></div>
+</section>
+
+<!-- 7 LAYOUT / EFFECTS / ICONS -->
+<section class="page">
+  <span class="label">06 .layout_effects_icons</span>
+  <h2>Structure and atmosphere</h2>
+
+  <div class="cols-2" style="margin-bottom:8pt">
+    <div>
+      <h3>Layout</h3>
+      <table>
+        <tr><td>Max content width</td><td class="mono">1280px</td></tr>
+        <tr><td>Reading width</td><td class="mono">700px descriptions, 900px lists</td></tr>
+        <tr><td>Section padding</td><td class="mono">48px / 32px (3rem 2rem)</td></tr>
+        <tr><td>Grid gap</td><td class="mono">32px, cards min 280px</td></tr>
+        <tr><td>Header</td><td class="mono">80px fixed, 80% white, 12px blur</td></tr>
+        <tr><td>Breakpoint</td><td class="mono">768px, stack to 1 column</td></tr>
+              </table>
+    </div>
+    <div>
+      <h3>Radius</h3>
+      <div style="display:flex;gap:10pt;align-items:flex-end;margin-bottom:12pt">
+        <div style="text-align:center"><div style="width:44pt;height:44pt;background:var(--tint-10);border:1px solid var(--neon-blue);border-radius:3pt"></div><div class="caption">sm 4px</div></div>
+        <div style="text-align:center"><div style="width:44pt;height:44pt;background:var(--tint-10);border:1px solid var(--neon-blue);border-radius:4.5pt"></div><div class="caption">md 6px</div></div>
+        <div style="text-align:center"><div style="width:44pt;height:44pt;background:var(--tint-10);border:1px solid var(--neon-blue);border-radius:6pt"></div><div class="caption">lg 8px</div></div>
+        <div style="text-align:center"><div style="width:44pt;height:44pt;background:var(--tint-10);border:1px solid var(--neon-blue);border-radius:9pt"></div><div class="caption">xl 12px</div></div>
+      </div>
+      <p style="font-size:9pt">Buttons and badges: md. Icon tiles: lg. Cards and rows: xl. Round icon wells: 50%.</p>
+    </div>
+  </div>
+
+  <h3>Signature effects</h3>
+  <div class="cols-3" style="margin-bottom:8pt">
+    <div class="card" style="padding:0;overflow:hidden"><div style="height:50pt;position:relative;background:linear-gradient(135deg,var(--tint-5),transparent)"><div class="grid-bg" style="background-size:18px 18px;opacity:.9"></div></div><div style="padding:10pt"><h4>Blueprint grid</h4><p>1px lines at 10% neon, 50px cells, 20% opacity, over a 135deg 5% wash. Hero only.</p></div></div>
+    <div class="card" style="padding:0;overflow:hidden"><div style="height:50pt;display:flex;align-items:center;padding:0 14pt"><div class="divider" style="width:100%;margin:0"></div></div><div style="padding:10pt"><h4>Glow divider</h4><p>2px line fading from transparent to neon and back, 10px glow. Separates big ideas.</p></div></div>
+    <div class="card" style="padding:0;overflow:hidden"><div style="height:50pt;display:flex;align-items:center;justify-content:center;font-size:18pt;font-weight:700"><span class="hl">Connects</span></div><div style="padding:10pt"><h4>Neon text glow</h4><p>0 0 10px at 40%. One highlighted phrase per screen.</p></div></div>
+  </div>
+
+  <h3>Iconography</h3>
+  <div class="cols-2">
+    <div>
+      <p style="font-size:9.5pt">Feather / Lucide style line icons: 24px grid, 2px stroke, round caps and joins, <span class="mono">stroke="currentColor"</span>, no fills. Tint them neon blue inside a 10% tile or circle. Sizes: 16px inline, 20px meta, 24px cards, 32px feature wells.</p>
+    </div>
+    <div style="display:flex;gap:10pt;flex-wrap:wrap">
+      <div class="icon-box"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg></div>
+      <div class="icon-box"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+      <div class="icon-box"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
+      <div class="icon-box"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg></div>
+      <div class="icon-box"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></div>
+      <div class="icon-box"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></div>
+    </div>
+  </div>
+
+  <h3 style="margin-top:6pt">Motion</h3>
+  <p style="font-size:9.5pt">Everything eases at <span class="mono">all 0.3s ease</span>. Cards lift 5px, rows slide 4px, buttons fade to 70%. Calm and quick, never bouncy (the hero scroll cue is the lone exception).</p>
+  <div class="folio"><span>LIT Brand Style Guide</span><span>07</span></div>
+</section>
+
+<!-- 8 VOICE -->
+<section class="page">
+  <span class="label">07 .voice_and_copy</span>
+  <h2>Sound like a neighbor who codes</h2>
+  <p class="lede">Warm, inclusive, and energized. We talk to people, not at them. Short sentences, active verbs, and a wink of developer humor.</p>
+
+  <div class="cols-3" style="margin-bottom:16pt">
+    <div class="card"><h4>Community first</h4><p>"We" and "you," never "the organization." Every message is an invitation.</p></div>
+    <div class="card"><h4>Local pride</h4><p>Name the place. Long Island, Farmingdale, Flux Coffee. Roots make it real.</p></div>
+    <div class="card"><h4>Playfully technical</h4><p>Snake case labels like <code>.past_presentations</code> nod to the craft without gatekeeping.</p></div>
+  </div>
+
+  <div class="cols-2" style="margin-bottom:16pt">
+    <div class="card do"><h4>Say it like this</h4>
+      <ul class="clean">
+        <li>Where Long Island's Tech Community Connects</li>
+        <li>Want to be a techie too?</li>
+        <li>Building Long Island's Tech Scene</li>
+        <li>Join Next Meetup</li>
+        <li>Educate, stimulate and cultivate with the LIT community.</li>
+      </ul>
+    </div>
+    <div class="card dont"><h4>Not like this</h4>
+      <ul class="clean no">
+        <li>Leverage synergistic networking paradigms.</li>
+        <li>Exclusive event for senior engineers only.</li>
+        <li>CLICK HERE NOW!!!</li>
+        <li>Walls of jargon with no human in them.</li>
+      </ul>
+    </div>
+  </div>
+
+  <h3>Copy conventions</h3>
+  <table>
+    <tr><td style="width:1.7in">Name</td><td>"Long Island Technologists" on first mention, "LIT" after. Always caps: LIT, never Lit.</td></tr>
+    <tr><td>Headlines</td><td>Title Case, 3 to 7 words, no ending period. Questions are welcome.</td></tr>
+    <tr><td>Buttons</td><td>Verb first, 2 to 4 words: Join Next Meetup, RSVP on Eventbrite, Get In Touch.</td></tr>
+    <tr><td>Section labels</td><td>Dot prefix plus snake case, lowercase: <code>.what_we_do</code>, <code>.sponsor_lit</code>.</td></tr>
+    <tr><td>Dates and times</td><td>"Thursday Evening," "7:00 PM EST." Mono for compact dates.</td></tr>
+    <tr><td>Contact</td><td class="mono">LIT@causeofakind.com</td></tr>
+    <tr><td>Emoji</td><td>Not in site UI. Icons do that job.</td></tr>
+  </table>
+  <div class="folio"><span>LIT Brand Style Guide</span><span>08</span></div>
+</section>
+
+<!-- 9 TOKENS -->
+<section class="page">
+  <span class="label">08 .token_reference</span>
+  <h2>Tokens for builders and AI skills</h2>
+  <p class="lede">Paste this block into any prompt, skill, email template, or stylesheet to stay on brand. Source of truth: <span class="mono">_sass/base/_variables.scss</span>.</p>
+<pre><span class="c">/* Long Island Technologists (LIT) brand tokens v1.0 */</span>
+:root {
+  <span class="c">/* Accent */</span>
+  <span class="k">--neon-blue</span>: <span class="v">#0ea5e9</span>;          <span class="c">/* CTAs, links, labels, highlights */</span>
+  <span class="k">--neon-glow</span>: <span class="v">rgba(14,165,233,.4)</span>;  <span class="c">/* text-shadow / box-shadow glow */</span>
+  <span class="k">--neon-blue-tint-2</span>:  <span class="v">rgba(14,165,233,.02)</span>;
+  <span class="k">--neon-blue-tint-5</span>:  <span class="v">rgba(14,165,233,.05)</span>;
+  <span class="k">--neon-blue-tint-10</span>: <span class="v">rgba(14,165,233,.10)</span>;
+  <span class="k">--neon-blue-tint-20</span>: <span class="v">rgba(14,165,233,.20)</span>;
+  <span class="c">/* Neutrals */</span>
+  <span class="k">--light-bg</span>: <span class="v">#fafafa</span>;  <span class="k">--card-bg</span>: <span class="v">#f5f5f5</span>;  <span class="k">--border-color</span>: <span class="v">#e0e0e0</span>;
+  <span class="k">--text-dark</span>: <span class="v">#141414</span>; <span class="k">--text-gray</span>: <span class="v">#737373</span>; <span class="k">--text-white</span>: <span class="v">#ffffff</span>;
+  <span class="c">/* Shape and depth */</span>
+  <span class="k">--radius-sm</span>: <span class="v">4px</span>; <span class="k">--radius-md</span>: <span class="v">6px</span>; <span class="k">--radius-lg</span>: <span class="v">8px</span>; <span class="k">--radius-xl</span>: <span class="v">12px</span>;
+  <span class="k">--shadow-10</span>: <span class="v">rgba(0,0,0,.1)</span>; <span class="k">--shadow-5</span>: <span class="v">rgba(0,0,0,.05)</span>;
+  <span class="c">/* Type */</span>
+  <span class="k">--font-sans</span>: <span class="v">"Inter", -apple-system, "Segoe UI", Roboto, sans-serif</span>;
+  <span class="k">--font-mono</span>: <span class="v">"Geist Mono", "Courier New", monospace</span>;
+}
+<span class="c">/* Google Fonts: Inter 400;500;600;700 + Geist Mono 100..900 */</span>
+<span class="c">/* Scale: h1 56/700/1.2  h2 40/700  h3 24/600  body 16/400/1.8  label 14 mono caps +.1em */</span>
+<span class="c">/* Motion: all .3s ease   Layout: max 1280px, section 48px/32px, gap 32px, bp 768px */</span></pre>
+
+  <h3 style="margin-top:16pt">Quick checklist</h3>
+  <div class="cols-2">
+    <ul class="clean">
+      <li>Light background, dark headlines, gray body.</li>
+      <li>Neon blue only where you want the eye to go.</li>
+      <li>One glowing highlight phrase per screen.</li>
+      <li>Mono, snake case section label above each H2.</li>
+    </ul>
+    <ul class="clean">
+      <li>Cards: #F5F5F5, 1px border, 12px radius.</li>
+      <li>Line icons, 2px stroke, in 10% blue tiles.</li>
+      <li>Logo on light surfaces, never recolored.</li>
+      <li>Copy that sounds like an invitation.</li>
+    </ul>
+  </div>
+  <div class="divider"></div>
+  <p style="text-align:center;font-size:9pt">Long Island Technologists &nbsp;/&nbsp; Monthly Meetups &nbsp;/&nbsp; Farmingdale, NY &nbsp;/&nbsp; LIT@causeofakind.com</p>
+  <div class="folio"><span>LIT Brand Style Guide</span><span>09</span></div>
+</section>
+
+</body>
+</html>
