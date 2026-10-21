@@ -70,8 +70,8 @@ title: "Long Island Technologists"
     <div class="event-card event-card-grid">
         <!-- Date Card -->
         <div class="event-date">
-            <span class="event-date-month">Oct</span>
-            <span class="event-date-day">15</span>
+            <span class="event-date-month">Dec</span>
+            <span class="event-date-day">3</span>
             <span class="event-date-year">2026</span>
         </div>
 
