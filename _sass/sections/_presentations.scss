@@ -98,3 +98,15 @@
     width: auto;
   }
 }
+
+// Cards for meetups without a recap page yet: same look, no hover
+.presentation-item-static:hover {
+  border-color: var(--border-color);
+  background: var(--card-bg);
+  transform: none;
+  box-shadow: none;
+
+  .presentation-title {
+    color: var(--text-dark);
+  }
+}
