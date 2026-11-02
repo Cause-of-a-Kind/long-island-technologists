@@ -34,6 +34,16 @@ image:
   height: 630
 github_username: cause-of-a-kind
 
+# Default social preview image for every page (jekyll-seo-tag reads page.image)
+defaults:
+  - scope:
+      path: ""
+    values:
+      image:
+        path: /og-image.png
+        width: 1200
+        height: 630
+
 # Build settings
 theme: minima
 plugins:
