@@ -393,7 +393,7 @@ title: "Long Island Technologists"
                 </svg>
             </div>
             <h3>Food Sponsor</h3>
-            <div class="sponsor-price">$250 <span>/ event</span></div>
+            <div class="sponsor-price">$500 <span>/ event</span></div>
             <ul class="sponsor-perks">
                 <li>
                     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
@@ -425,7 +425,7 @@ title: "Long Island Technologists"
                 </svg>
             </div>
             <h3>Beverage Sponsor</h3>
-            <div class="sponsor-price">$250 <span>/ event</span></div>
+            <div class="sponsor-price">$500 <span>/ event</span></div>
             <ul class="sponsor-perks">
                 <li>
                     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
@@ -454,7 +454,7 @@ title: "Long Island Technologists"
                 </svg>
             </div>
             <h3>Vendor Sponsor</h3>
-            <div class="sponsor-price">$500 <span>/ event</span></div>
+            <div class="sponsor-price">$1,000 <span>/ event</span></div>
             <ul class="sponsor-perks">
                 <li>
                     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
@@ -487,7 +487,7 @@ title: "Long Island Technologists"
                 </svg>
             </div>
             <h3>Title Sponsor</h3>
-            <div class="sponsor-price">$1,000 <span>/ event</span></div>
+            <div class="sponsor-price">$2,500 <span>/ event</span></div>
             <ul class="sponsor-perks">
                 <li>
                     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
