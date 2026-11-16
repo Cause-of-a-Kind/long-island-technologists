@@ -381,7 +381,7 @@ title: "Long Island Technologists"
     </div>
 
     <div class="sponsor-grid">
-        <!-- Food Sponsor -->
+        <!-- Food & Beverage Sponsor -->
         <div class="card sponsor-card">
             <div class="card-icon">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -392,8 +392,8 @@ title: "Long Island Technologists"
                     <line x1="14" y1="1" x2="14" y2="4"></line>
                 </svg>
             </div>
-            <h3>Food Sponsor</h3>
-            <div class="sponsor-price">$500 <span>/ event</span></div>
+            <h3>Food &amp; Beverage Sponsor</h3>
+            <div class="sponsor-price">$1,000 <span>/ event</span></div>
             <ul class="sponsor-perks">
                 <li>
                     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
@@ -404,39 +404,7 @@ title: "Long Island Technologists"
                     Mentioned during introductions &amp; opening remarks
                 </li>
             </ul>
-            <a href="mailto:LIT@causeofakind.com?subject=Food%20Sponsor%20Inquiry" class="cta-button cta-button-outline sponsor-cta">
-                Email Us
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <line x1="5" y1="12" x2="19" y2="12"></line>
-                    <polyline points="12 5 19 12 12 19"></polyline>
-                </svg>
-            </a>
-        </div>
-
-        <!-- Beverage Sponsor -->
-        <div class="card sponsor-card">
-            <div class="card-icon">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M17 8h1a4 4 0 1 1 0 8h-1"></path>
-                    <path d="M3 8h14v9a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4Z"></path>
-                    <line x1="6" y1="2" x2="6" y2="4"></line>
-                    <line x1="10" y1="2" x2="10" y2="4"></line>
-                    <line x1="14" y1="2" x2="14" y2="4"></line>
-                </svg>
-            </div>
-            <h3>Beverage Sponsor</h3>
-            <div class="sponsor-price">$500 <span>/ event</span></div>
-            <ul class="sponsor-perks">
-                <li>
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                    Recognition in marketing materials
-                </li>
-                <li>
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                    Mentioned during introductions &amp; opening remarks
-                </li>
-            </ul>
-            <a href="mailto:LIT@causeofakind.com?subject=Beverage%20Sponsor%20Inquiry" class="cta-button cta-button-outline sponsor-cta">
+            <a href="mailto:LIT@causeofakind.com?subject=Food%20%26%20Beverage%20Sponsor%20Inquiry" class="cta-button cta-button-outline sponsor-cta">
                 Email Us
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <line x1="5" y1="12" x2="19" y2="12"></line>
@@ -454,7 +422,7 @@ title: "Long Island Technologists"
                 </svg>
             </div>
             <h3>Vendor Sponsor</h3>
-            <div class="sponsor-price">$1,000 <span>/ event</span></div>
+            <div class="sponsor-price">$2,500 <span>/ event</span></div>
             <ul class="sponsor-perks">
                 <li>
                     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
@@ -487,7 +455,7 @@ title: "Long Island Technologists"
                 </svg>
             </div>
             <h3>Title Sponsor</h3>
-            <div class="sponsor-price">$2,500 <span>/ event</span></div>
+            <div class="sponsor-price">$5,000 <span>/ event</span></div>
             <ul class="sponsor-perks">
                 <li>
                     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
